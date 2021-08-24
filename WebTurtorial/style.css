@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(255,255,255,.5),#2066dd),url(cssproject_23082021-main/images/abstract-techno-background-with-connecting-lines.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
