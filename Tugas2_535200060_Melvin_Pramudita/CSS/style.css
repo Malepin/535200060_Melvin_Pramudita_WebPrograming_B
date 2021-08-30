@@ -2,6 +2,7 @@ body{
     background-image: url(/images/_MG_1901~2.JPG);
     background-size: 100%;
     background-repeat: no-repeat; 
+    background-attachment: fixed;
     font-family: 'Klee One', cursive;
     --nav-load-time : 300ms;
 }
@@ -52,7 +53,7 @@ section{
     width: 70%;
     height: var(--height);
     border-radius: 25px;
-    background-color: rgba(173, 31, 31, 0.747);
+    background-color: rgba(61, 61, 61, 0.575);
     color: rgb(172, 154, 154);
     margin: 5px;
     animation: nav-load var(--nav-load-time);
@@ -104,7 +105,7 @@ article{
     background-color: rgba(61, 61, 61, 0.747);
     color: rgb(172, 154, 154);
     padding: 5px 25px 25px 25px;
-    margin: 0px 0px 60px 0px;
+    margin: 0px 0px 00px 0px;
     text-align: center;
     animation: nav-load var(--nav-load-time);
 }
@@ -256,6 +257,24 @@ article{
 
 /*slide*/
 
+.hr{
+    margin: 5px 0px 5px 180px;
+}
+
+.slide2{
+    float: left;
+    padding: var(--pads);
+    width: auto;
+    height: var(--height);
+    border-radius: 25px;
+    background-color: rgba(61, 61, 61, 0.747);
+    color: rgb(172, 154, 154);
+    padding: 5px 25px 25px 25px;
+    margin: 0px 0px 100px 180px;
+    text-align: center;
+    animation: nav-load var(--nav-load-time);
+}
+
 .slider{
     width: 800px;
     height: 500px;
@@ -280,6 +299,11 @@ article{
 
 .slide img{
     width: 800px;
+    height: 500px;
+}
+
+.slide2 img{
+    width: 300px;
     height: 500px;
 }
 
@@ -321,6 +345,17 @@ article{
     margin-left: -40%;
 }
 
+#radio4:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -40%;
+}
 /*auto  nav*/
 
 .nav-auto{
@@ -351,5 +386,17 @@ article{
 }
 
 #radio3:checked ~ .nav-auto .auto-btn3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn1{
+    background: #40D3DC;
+}
+
+#radio5:checked ~ .nav-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+#radio6:checked ~ .nav-auto .auto-btn3{
     background: #40D3DC;
 }
